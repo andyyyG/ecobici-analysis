@@ -75,4 +75,4 @@ and shift to lighter maintenance schedules on weekends.
 
 ## Author
 
-**Andy** — [Kaggle](https://www.kaggle.com/andyyyg)
+**Andrea Gómez Franco** — [Kaggle](https://www.kaggle.com/andyyyg)

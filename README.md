@@ -6,6 +6,8 @@ This project analyzes 9.4 million ECOBICI trips in Mexico City to uncover demand
 
 The analysis identifies when and where bike shortages occur, why they happen, and how targeted operational strategies can significantly improve system efficiency.
 
+---
+
 ## Reproducing the Analysis
 
 Run the preprocessing scripts in the following order before opening the notebook:
@@ -35,7 +37,7 @@ ecobici-analysis/
 ```
 ---
 
-**Key question:**  
+## Key question 
 How can ECOBICI optimize bicycle distribution across stations based on trip demand patterns?
 
 View the full analysis on Kaggle:  
@@ -126,3 +128,5 @@ By focusing on a small number of stations and critical time windows, ECOBICI can
 ## Author
 
 Andrea Gómez Franco — [Kaggle](https://www.kaggle.com/andyyyg) · [LinkedIn](https://www.linkedin.com/in/andrea-gomez-franco-333837372)
+
+---

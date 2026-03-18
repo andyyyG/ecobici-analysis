@@ -6,6 +6,35 @@ This project analyzes 9.4 million ECOBICI trips in Mexico City to uncover demand
 
 The analysis identifies when and where bike shortages occur, why they happen, and how targeted operational strategies can significantly improve system efficiency.
 
+## Reproducing the Analysis
+
+Run the preprocessing scripts in the following order before opening the notebook:
+
+1. `scripts/fetch_stations.py` — fetch station data from the GBFS API
+2. `scripts/enrich_stations.py` — enrich stations with municipality and neighborhood boundaries
+3. `scripts/merge_trips_stations.py` — merge monthly trip data with station metadata
+4. `notebooks/ecobici-data-analysis.ipynb` — run the full analysis
+
+All required data sources are documented in [`data/README.md`](data/README.md).
+
+---
+
+## Project Structure
+```
+ecobici-analysis/
+│
+├── README.md                              
+├── notebooks/
+│   └── ecobici-data-analysis.ipynb        # Main analysis notebook
+├── scripts/
+│   ├── fetch_stations.py                  # Fetch station data from GBFS API
+│   ├── enrich_stations.py                 # Spatial join with geographic boundaries
+│   └── merge_trips_stations.py            # Merge trip data with station metadata
+└── data/
+    └── README.md                          # Dataset sources and download links
+```
+---
+
 **Key question:**  
 How can ECOBICI optimize bicycle distribution across stations based on trip demand patterns?
 
@@ -96,4 +125,4 @@ By focusing on a small number of stations and critical time windows, ECOBICI can
 
 ## Author
 
-**Andrea Gómez Franco** — [Kaggle](https://www.kaggle.com/andyyyg)
+Andrea Gómez Franco — [Kaggle](https://www.kaggle.com/andyyyg) · [LinkedIn](https://www.linkedin.com/in/andrea-gomez-franco-333837372)
